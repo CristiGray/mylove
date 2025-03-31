@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(188, 47, 47); /* Красный фон */
+    color: white; /* Белый текст */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+.reason {
+    font-size: 24px;
+    margin: 20px 0;
+    opacity: 0; /* Сначала скрыты */
+    animation: fadeIn 1s ease-out forwards; /* Плавный, но быстрый вход */
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1; /* Исправлено opacity */
+        transform: translateY(0);
+    }
+}
+
+/* Фото в конце */
+.photo {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    opacity: 1;
+    margin-top: 30px;
+    animation: fadeIn 1s ease-out forwards; /* Плавный, но быстрый вход */
+}
